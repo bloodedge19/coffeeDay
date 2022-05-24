@@ -1,5 +1,5 @@
 # PSBO Kelompok 2 / P2 (Front-End)
-## Topik:  Modul Monitoring Kondisi Hewan Ternak
+## Topik:  Coffee Everyday (Recipe App)
 G64190013 - Daffa Muhammad Subhan
 
 G64190033 - Muzaffar Wijaya
