@@ -13,21 +13,26 @@ class Coffeecard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Color(0xff212325),
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
           children: <Widget>[
             Expanded(child: Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.fromLTRB(24,24,8,24),
               child: Column(children: <Widget>[
-                Text(
-                  coffeeList_.name,
-                  style: GoogleFonts.ibmPlexSans(textStyle: TextStyle(
-                      color: Color(0xffFFFFFF),
-                      fontSize: 20)
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    coffeeList_.name,
+                    textAlign: TextAlign.left,
+                    style: GoogleFonts.lora(textStyle: TextStyle(
+                        color: Color(0xffFFFFFF),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 20)
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
                 ),
                 SizedBox(height: 5),
                 Text(
@@ -35,7 +40,7 @@ class Coffeecard extends StatelessWidget {
                   textAlign: TextAlign.justify,
                   style: GoogleFonts.lato(textStyle: TextStyle(
                       color: Color(0xff7A7B7C),
-                      fontSize: 15)
+                      fontSize: 13)
                   ),
                   maxLines: 8,
                   overflow: TextOverflow.ellipsis,

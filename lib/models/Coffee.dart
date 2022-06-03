@@ -20,7 +20,7 @@ class Coffee {
 List<Coffee> coffeeList = [
   Coffee(
     id: 0,
-    name: "Latte",
+    name: "Cafe Latte",
     category: "Light",
     ingredients: ["Espresso 45ml", "Milk 300ml"],
     description: "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam",

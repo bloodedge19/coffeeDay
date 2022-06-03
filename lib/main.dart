@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Coffee Day',
       theme: ThemeData(
-        appBarTheme: AppBarTheme(color: Color(0xffEBDBCC),elevation: 0),
-        scaffoldBackgroundColor: Color(0xffEBDBCC),
+        appBarTheme: AppBarTheme(color: Color(0xffFFF5EC),elevation: 0),
+        scaffoldBackgroundColor: Color(0xffFFF5EC),
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: HomeScreen(),

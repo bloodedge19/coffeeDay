@@ -12,9 +12,9 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 30),
+      padding: EdgeInsets.symmetric(vertical: 24),
       child: SizedBox(
-        height: kToolbarHeight,
+        height: kToolbarHeight-16,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: categories.length,
@@ -33,18 +33,18 @@ class _CategoriesState extends State<Categories> {
       },
       child: Container(
         alignment: Alignment.center,
-        margin: EdgeInsets.only(left: 20.0),
-        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 10.0),
+        margin: EdgeInsets.symmetric(horizontal: 4.0),
+        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 0.0),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(32),
           color:
           selected == index? Color(0xffC3954E): Color(0xffEEE5DD),
         ),
         child: Text(
           categories[index],
           style:
-          selected == index?TextStyle(fontWeight: FontWeight.bold, color: Color(0xffFFFFFF), fontSize: 16):
-          TextStyle(fontWeight: FontWeight.bold, color: Color(0xff212325), fontSize: 16),
+          selected == index?TextStyle(fontWeight: FontWeight.w600, color: Color(0xffFFFFFF), fontSize: 16):
+          TextStyle(fontWeight: FontWeight.w600, color: Color(0xff212325), fontSize: 16),
         ),
       ),
     );

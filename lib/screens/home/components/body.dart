@@ -8,10 +8,13 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Categories(),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Categories(),
+        ),
         Expanded(child:
         Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.fromLTRB(16,0,16,16),
           child: GridView.builder(
             itemCount: coffeeList.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
