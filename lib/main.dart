@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/constant.dart';
 import 'package:flutter_project/models/Coffee.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Coffee Day',
       theme: ThemeData(
-        appBarTheme: AppBarTheme(color: Color(0xffFFF5EC),elevation: 0),
-        scaffoldBackgroundColor: Color(0xffFFF5EC),
+        appBarTheme: AppBarTheme(color: primaryColor,elevation: 0),
+        scaffoldBackgroundColor: primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: HomeScreen(),

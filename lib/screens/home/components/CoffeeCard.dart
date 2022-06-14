@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/constant.dart';
 import 'package:flutter_project/models/Coffee.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_project/screens/home/components/category.dart';
 
 class Coffeecard extends StatelessWidget {
   final Coffee coffeeList_;
@@ -12,7 +14,7 @@ class Coffeecard extends StatelessWidget {
       aspectRatio: 2,
       child: Container(
         decoration: BoxDecoration(
-          color: Color(0xff212325),
+          color: blackColor,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -26,7 +28,7 @@ class Coffeecard extends StatelessWidget {
                     coffeeList_.name,
                     textAlign: TextAlign.left,
                     style: GoogleFonts.lora(textStyle: TextStyle(
-                        color: Color(0xffFFFFFF),
+                        color: textColor,
                         fontWeight: FontWeight.w600,
                         fontSize: 20)
                     ),
@@ -39,7 +41,7 @@ class Coffeecard extends StatelessWidget {
                   coffeeList_.description,
                   textAlign: TextAlign.justify,
                   style: GoogleFonts.lato(textStyle: TextStyle(
-                      color: Color(0xff7A7B7C),
+                      color: secondaryTextColor,
                       fontSize: 13)
                   ),
                   maxLines: 8,
