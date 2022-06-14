@@ -1,4 +1,4 @@
-#Tue Jun 14 18:02:57 ICT 2022
-base.0=D\:\\Kuliah\\Sem 6\\PSBO\\coffeeDay\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Jun 14 22:38:08 ICT 2022
+base.0=C\:\\Users\\legion 520\\Documents\\PSBO\\coffeeDay\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
         ),
         Expanded(child:
         Padding(
-          padding: EdgeInsets.fromLTRB(16,0,16,16),
+          padding: EdgeInsets.fromLTRB(16,16,16,16),
           child: GridView.builder(
             itemCount: coffeeList.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

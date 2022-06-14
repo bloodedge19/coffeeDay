@@ -20,7 +20,7 @@ class coffeeDetail extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Expanded(child: Padding(
-              padding: EdgeInsets.fromLTRB(24,24,8,24),
+              padding: EdgeInsets.fromLTRB(0,24,0,24),
               child: Column(children: <Widget>[
                 Align(
                   alignment: Alignment.center,
@@ -30,45 +30,51 @@ class coffeeDetail extends StatelessWidget {
                     style: GoogleFonts.lora(textStyle: TextStyle(
                         color: textColor,
                         fontWeight: FontWeight.w600,
-                        fontSize: 50)
+                        fontSize: 40)
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
                 SizedBox(width: 5),
-                Image.asset(coffeeList_.imageUrl,
+                Image.asset(coffeeList_.imageDetail,
                       fit: BoxFit.cover,
                       alignment: Alignment.center,
                     ),
                 SizedBox(height: 5),
-                Text(
-                  coffeeList_.description,
-                  textAlign: TextAlign.justify,
-                  style: GoogleFonts.lato(textStyle: TextStyle(
-                      color: textColor,
-                      fontSize: 20)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    coffeeList_.description,
+                    textAlign: TextAlign.justify,
+                    style: GoogleFonts.lato(textStyle: TextStyle(
+                        color: textColor,
+                        fontSize: 18)
+                    ),
+                    maxLines: 10,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  maxLines: 10,
-                  overflow: TextOverflow.ellipsis,
                 ),
-                Text(
-                  "Ingredients:",
-                  textAlign: TextAlign.justify,
-                  style: GoogleFonts.lato(textStyle: TextStyle(
-                      color: selectedColor,
-                      fontSize: 25)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0,16,0,0),
+                  child: Text(
+                    "Ingredients:",
+                    textAlign: TextAlign.left,
+                    style: GoogleFonts.lato(textStyle: TextStyle(
+                        color: selectedColor,
+                        fontSize: 24)
+                    ),
+                    maxLines: 10,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  maxLines: 10,
-                  overflow: TextOverflow.ellipsis,
                 ),
                 for (var i = 0; i < len; i++)
                   Text(
                       coffeeList_.ingredients[i],
-                      textAlign: TextAlign.justify,
+                      textAlign: TextAlign.left,
                       style: GoogleFonts.lato(textStyle: TextStyle(
                           color: textColor,
-                          fontSize: 30)
+                          fontSize: 18)
                       ),
                       maxLines: 8,
                       overflow: TextOverflow.ellipsis)
@@ -82,4 +88,5 @@ class coffeeDetail extends StatelessWidget {
     );
   }
 }
+
 

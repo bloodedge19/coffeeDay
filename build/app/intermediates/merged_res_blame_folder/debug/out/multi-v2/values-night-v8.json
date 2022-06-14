@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Kuliah\\Sem 6\\PSBO\\coffeeDay\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\legion 520\\Documents\\PSBO\\coffeeDay\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\Kuliah\\Sem 6\\PSBO\\coffeeDay\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\legion 520\\Documents\\PSBO\\coffeeDay\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
