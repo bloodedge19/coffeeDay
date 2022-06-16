@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
                 crossAxisCount: 1),
             itemBuilder: (context, index){
               return GestureDetector(
-              child: Coffeecard(coffeeList_: coffeeList[index],
+                child: Coffeecard(coffeeList_: coffeeList[index],
               ),
                     onTap: (){
                     Navigator.of(context).push(MaterialPageRoute(builder: (context)=>coffeeDetail(coffeeList_: coffeeList[index],)));},

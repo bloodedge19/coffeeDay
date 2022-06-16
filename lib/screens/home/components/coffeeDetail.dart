@@ -24,6 +24,7 @@ class coffeeDetail extends StatelessWidget {
               child: Column(children: <Widget>[
                 Align(
                   alignment: Alignment.center,
+                  key: Key('showCoffee'),
                   child: Text(
                     coffeeList_.name,
                     textAlign: TextAlign.justify,
@@ -88,5 +89,6 @@ class coffeeDetail extends StatelessWidget {
     );
   }
 }
+
 
 
